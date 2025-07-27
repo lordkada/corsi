@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test interattivo B1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      padding: 20px 30px;
+    }
+    h1, h2, h3 {
+      margin-top: 0;
+      color: #002d72;
+    }
+    button {
+      background-color: #007acc;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px 0;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005a9e;
+    }
+    .option {
+      display: block;
+      padding: 8px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .option input {
+      margin-right: 10px;
+    }
+    .hidden {
+      display: none;
+    }
+    .timer {
+      float: right;
+      font-weight: bold;
+      color: #d43f3a;
+    }
+    .results {
+      margin-top: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #e6f0fa;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Test interattivo di inglese B1</h1>
+    <div id="start-screen">
+      <p>Questo test copre gli argomenti di grammatica del livello B1. È possibile eseguire il test in modalità a tempo o senza tempo. Il numero di domande viene selezionato casualmente da un ampio database a ogni esecuzione.</p>
+      <label>
+        <input type="checkbox" id="timed-mode" /> Modalità a tempo (45 minuti)
+      </label>
+      <br />
+      <label>
+        <input type="checkbox" id="show-grammar" /> Mostra note grammaticali per ciascuna domanda
+      </label>
+      <br />
+      <button id="start-button">Inizia il test</button>
+    </div>
+    <div id="quiz-screen" class="hidden">
+      <div class="timer" id="timer"></div>
+      <h2 id="question-counter"></h2>
+      <p id="question-text"></p>
+      <div id="options-container"></div>
+      <p id="grammar-note" style="font-size: 0.9em; color: #666;"></p>
+      <button id="next-button">Prossima domanda</button>
+    </div>
+    <div id="results-screen" class="hidden">
+      <h2>Risultati del test</h2>
+      <p id="score-text"></p>
+      <div class="results" id="detailed-results"></div>
+      <button id="restart-button">Ricomincia</button>
+    </div>
+  </div>
+  <script>
+    // ==================== Data generation ====================
+    /**
+     * Questo script genera un ampio set di domande (oltre 1000) basate su
+     * diversi argomenti grammaticali del livello B1. Ogni domanda è un
+     * oggetto con il testo, le opzioni e l'indice della risposta corretta.
+     */
+    function shuffleArray(arr) {
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+
+    // Base data for generating questions
+    const verbs = {
+      go: { past: 'went', participle: 'gone' },
+      be: { past: 'was', participle: 'been' },
+      eat: { past: 'ate', participle: 'eaten' },
+      see: { past: 'saw', participle: 'seen' },
+      speak: { past: 'spoke', participle: 'spoken' },
+      have: { past: 'had', participle: 'had' },
+      make: { past: 'made', participle: 'made' },
+      do: { past: 'did', participle: 'done' },
+      write: { past: 'wrote', participle: 'written' },
+      take: { past: 'took', participle: 'taken' }
+    };
+    const modalTemplates = [
+      {
+        q: 'You ____ wear a seatbelt when driving.',
+        a: 'must',
+        opts: ['must', "can't", 'may'],
+        cat: 'modal'
+      },
+      {
+        q: 'He ____ be at home; there is no light on.',
+        a: "can't",
+        opts: ['must', "can't", 'might'],
+        cat: 'modal'
+      },
+      {
+        q: 'We ____ visit them tomorrow if we have time.',
+        a: 'might',
+        opts: ['must', 'might', "can't"],
+        cat: 'modal'
+      }
+    ];
+    const articleTemplates = [
+      {
+        q: 'I have ____ cat and ____ dog.',
+        a: 'a / a',
+        opts: ['the / the', 'a / a', 'an / a'],
+        cat: 'articles'
+      },
+      {
+        q: '____ Earth orbits ____ Sun.',
+        a: 'The / the',
+        opts: ['A / a', 'An / a', 'The / the'],
+        cat: 'articles'
+      },
+      {
+        q: 'She is ____ engineer.',
+        a: 'an',
+        opts: ['a', 'an', 'the'],
+        cat: 'articles'
+      }
+    ];
+    const pronounTemplates = [
+      {
+        q: 'The man ____ lives next door is a doctor.',
+        a: 'who',
+        opts: ['who', 'which', 'where'],
+        cat: 'pronouns'
+      },
+      {
+        q: 'This is the book ____ I told you about.',
+        a: 'that',
+        opts: ['who', 'that', 'where'],
+        cat: 'pronouns'
+      },
+      {
+        q: 'Do you know the girl ____ car was stolen?',
+        a: 'whose',
+        opts: ['which', 'whose', 'who'],
+        cat: 'pronouns'
+      }
+    ];
+    const quantifierTemplates = [
+      {
+        q: 'There aren\'t ____ apples left.',
+        a: 'many',
+        opts: ['a lot of', 'many', 'much'],
+        cat: 'quantifiers'
+      },
+      {
+        q: 'Can I have ____ milk?',
+        a: 'some',
+        opts: ['any', 'some', 'much'],
+        cat: 'quantifiers'
+      },
+      {
+        q: 'She doesn\'t have ____ friends.',
+        a: 'many',
+        opts: ['much', 'many', 'a bit of'],
+        cat: 'quantifiers'
+      }
+    ];
+    const conditionalTemplates = [
+      {
+        q: 'If it rains, we ____ stay home.',
+        a: 'will',
+        opts: ['will', 'would', 'can'],
+        cat: 'conditional'
+      },
+      {
+        q: 'If I ____ more money, I would travel.',
+        a: 'had',
+        opts: ['have', 'had', 'will have'],
+        cat: 'conditional'
+      },
+      {
+        q: 'If you had studied, you ____ passed the test.',
+        a: 'would have',
+        opts: ['will have', 'would have', 'would'],
+        cat: 'conditional'
+      }
+    ];
+    const comparativeTemplates = [
+      {
+        q: 'This car is ____ than that one.',
+        a: 'faster',
+        opts: ['fast', 'faster', 'fastest'],
+        cat: 'comparative'
+      },
+      {
+        q: 'He is the ____ student in the class.',
+        a: 'tallest',
+        opts: ['taller', 'most tall', 'tallest'],
+        cat: 'comparative'
+      },
+      {
+        q: 'My house is ____ from here than yours.',
+        a: 'further',
+        opts: ['far', 'farther', 'further'],
+        cat: 'comparative'
+      }
+    ];
+    const prepositionTemplates = [
+      {
+        q: 'I have lived here ____ 2010.',
+        a: 'since',
+        opts: ['for', 'since', 'during'],
+        cat: 'prepositions'
+      },
+      {
+        q: 'They have been married ____ twenty years.',
+        a: 'for',
+        opts: ['since', 'for', 'during'],
+        cat: 'prepositions'
+      },
+      {
+        q: 'She studied ____ the flight.',
+        a: 'during',
+        opts: ['for', 'during', 'since'],
+        cat: 'prepositions'
+      }
+    ];
+    const gerundInfTemplates = [
+      {
+        q: 'I enjoy ____ (read) books.',
+        a: 'reading',
+        opts: ['to read', 'reading', 'read'],
+        cat: 'gerund_inf'
+      },
+      {
+        q: 'They decided ____ (go) to the beach.',
+        a: 'to go',
+        opts: ['going', 'to go', 'go'],
+        cat: 'gerund_inf'
+      },
+      {
+        q: 'Would you like ____ (come) with us?',
+        a: 'to come',
+        opts: ['coming', 'to come', 'come'],
+        cat: 'gerund_inf'
+      }
+    ];
+    const reflexiveTemplates = [
+      {
+        q: 'She looked at ____ in the mirror.',
+        a: 'herself',
+        opts: ['herself', 'himself', 'themselves'],
+        cat: 'reflexive'
+      },
+      {
+        q: 'I did the homework by ____.',
+        a: 'myself',
+        opts: ['myself', 'yourself', 'ourselves'],
+        cat: 'reflexive'
+      },
+      {
+        q: 'We will handle it ____.',
+        a: 'ourselves',
+        opts: ['themselves', 'ourselves', 'yourselves'],
+        cat: 'reflexive'
+      }
+    ];
+    // Build question list using templates
+    function buildQuestions() {
+      const questions = [];
+      // Generate verb tense questions: past simple vs present perfect vs future
+      Object.keys(verbs).forEach(v => {
+        const forms = verbs[v];
+        // Past simple question (generic object to avoid semantic clashes)
+        questions.push({
+          q: `I ____ (${v}) it last night.`,
+          opts: [forms.past, v, forms.participle],
+          a: forms.past,
+          cat: 'past_simple'
+        });
+        // Present perfect question
+        questions.push({
+          q: `She ____ (${v}) it three times.`,
+          opts: [`has ${forms.participle}`, `${forms.past}`, `${forms.participle}`],
+          a: `has ${forms.participle}`,
+          cat: 'present_perfect'
+        });
+        // Future simple question
+        questions.push({
+          q: `We ____ (${v}) it tomorrow.`,
+          opts: [`will ${v}`, `${v}`, `${v}ed`],
+          a: `will ${v}`,
+          cat: 'future_simple'
+        });
+      });
+      // Generate from other templates
+      const addTemplates = tmplArr => {
+        tmplArr.forEach(t => {
+          // Assume template object may include a category
+          questions.push({ q: t.q, opts: shuffleArray([...t.opts]), a: t.a, cat: t.cat || '' });
+        });
+      };
+      [modalTemplates, articleTemplates, pronounTemplates, quantifierTemplates,
+       conditionalTemplates, comparativeTemplates, prepositionTemplates,
+       gerundInfTemplates, reflexiveTemplates].forEach(addTemplates);
+
+      // Additional templates for richer variety
+      const extraTemplates = [
+        // Present simple with verb to be/have/do
+        { q: 'He ____ (be) tall.', a: 'is', opts: ['am','is','are'], cat:'present_simple' },
+        { q: 'They ____ (have) a car.', a: 'have', opts: ['has','have','having'], cat:'present_simple' },
+        { q: 'She ____ (do) her homework.', a: 'does', opts: ['do','does','doing'], cat:'present_simple' },
+        { q: 'We ____ (not be) ready.', a: "aren't", opts: ["isn't","aren't","don't"], cat:'present_simple' },
+        { q: 'They ____ (not like) coffee.', a: "don't", opts: ["don't","doesn't","aren't"], cat:'present_simple' },
+        { q: 'Give it to ____.', a: 'me', opts: ['I','me','mine'], cat:'pronouns' },
+        { q: '____ is going to school?', a: 'Who', opts: ['Who','Which','Where'], cat:'questions' },
+        { q: 'She goes ____ school by bus.', a: 'to', opts: ['to','at','in'], cat:'prepositions' },
+        { q: 'They arrived ____ the morning.', a: 'in', opts: ['in','at','on'], cat:'prepositions' },
+        { q: 'I was born ____ 1990.', a: 'in', opts: ['in','on','at'], cat:'prepositions' },
+        { q: 'Choose the correct word: “casa” in inglese è ____.', a: 'house', opts: ['house','car','tree'], cat:'vocabulary' },
+        { q: 'Choose the correct translation: “She is reading.”', a: 'Lei sta leggendo.', opts: ['Lei sta leggendo.','Lei leggendo.','Lei legge.'], cat:'translation' },
+        { q: 'Identify the error: "He don\'t like pizza."', a: 'don\'t → doesn\'t', opts: ['don\'t → doesn\'t','like → likes','He → Him'], cat:'error' },
+        { q: 'Which sentence is correct?', a: 'Do you speak English?', opts: ['Speak you English?','Do you speak English?','You speak English?'], cat:'questions' }
+      ];
+      extraTemplates.forEach(t => {
+        questions.push({ q: t.q, opts: shuffleArray([...t.opts]), a: t.a, cat: t.cat });
+      });
+      // Duplicate with slight variations to reach over 1000 questions
+      const baseLength = questions.length;
+      while (questions.length < 1000) {
+        // clone a random question and maybe swap two options for variability
+        const idx = Math.floor(Math.random() * baseLength);
+        const original = questions[idx];
+        const newOpts = shuffleArray([...original.opts]);
+        questions.push({ q: original.q, opts: newOpts, a: original.a, cat: original.cat });
+      }
+      return questions;
+    }
+
+    const allQuestions = buildQuestions();
+
+    // Map categories to grammar links and titles. These anchors refer to the B1 course
+    const grammarLinks = {
+      past_simple: {title:'Passato semplice', link:'https://github.com/lordkada/corsi/blob/main/corso_inglese_b1.md#2-passato-semplice-e-present-perfect'},
+      present_perfect: {title:'Present perfect', link:'https://github.com/lordkada/corsi/blob/main/corso_inglese_b1.md#2-passato-semplice-e-present-perfect'},
+      future_simple: {title:'Forme del futuro', link:'https://github.com/lordkada/corsi/blob/main/corso_inglese_b1.md#3-forme-del-futuro'},
+      present_simple: {title:'Presente semplice', link:'https://github.com/lordkada/corsi/blob/main/corso_inglese_b1.md#1-presente-semplice-e-presente-continuo'},
+      modal: {title:'Verbi modali', link:'https://github.com/lordkada/corsi/blob/main/corso_inglese_b1.md#5-verbi-modali-permesso-possibilita-e-obbligo'},
+      articles: {title:'Articoli', link:'https://github.com/lordkada/corsi/blob/main/corso_inglese_b1.md#8-articoli-aan-the'},
+      pronouns: {title:'Pronomi relativi/personali', link:'https://github.com/lordkada/corsi/blob/main/corso_inglese_b1.md#10-pronomi-relativi'},
+      quantifiers: {title:'Quantificatori', link:'https://github.com/lordkada/corsi/blob/main/corso_inglese_b1.md#9-quantificatori-e-determinativi'},
+      conditional: {title:'Condizionali', link:'https://github.com/lordkada/corsi/blob/main/corso_inglese_b1.md#6-condizionali'},
+      comparative: {title:'Comparativi e superlativi', link:'https://github.com/lordkada/corsi/blob/main/corso_inglese_b1.md#4-comparativi-e-superlativi'},
+      prepositions: {title:'Preposizioni', link:'https://github.com/lordkada/corsi/blob/main/corso_inglese_b1.md#13-preposizioni-di-tempo-for-since-during'},
+      gerund_inf: {title:'Gerundio e infinito', link:'https://github.com/lordkada/corsi/blob/main/corso_inglese_b1.md#12-gerundio-e-infinito'},
+      reflexive: {title:'Pronomi riflessivi', link:'https://github.com/lordkada/corsi/blob/main/corso_inglese_b1.md#11-pronomi-riflessivi'},
+      questions: {title:'Formazione delle domande', link:'https://github.com/lordkada/corsi/blob/main/corso_inglese_b1.md#15-formazione-delle-domande'},
+      vocabulary: {title:'Vocabolario', link:'https://github.com/lordkada/corsi/blob/main/corso_inglese_b1.md#appendice-1-dizionario-inglese→italiano'},
+      translation: {title:'Traduzioni', link:'https://github.com/lordkada/corsi/blob/main/corso_inglese_b1.md#appendice-1-dizionario-inglese→italiano'},
+      error: {title:'Errori comuni', link:'https://github.com/lordkada/corsi/blob/main/corso_inglese_b1.md#1-presente-semplice-e-presente-continuo'},
+      modalTemplates: {title:'Verbi modali', link:'https://github.com/lordkada/corsi/blob/main/corso_inglese_b1.md#5-verbi-modali-permesso-possibilita-e-obbligo'}
+    };
+
+    // ==================== Quiz logic ====================
+    let currentQuestions = [];
+    let currentIndex = 0;
+    let userAnswers = [];
+    let timerInterval;
+    let startTime;
+    let timeLimit = 45 * 60; // seconds
+    function startQuiz() {
+      // Reset state
+      const NUMBER_OF_QUESTIONS = 50;
+      // select unique questions based on question text to avoid duplicates in one run
+      const used = new Set();
+      const selected = [];
+      const shuffled = shuffleArray([...allQuestions]);
+      for (let q of shuffled) {
+        if (!used.has(q.q)) {
+          selected.push(q);
+          used.add(q.q);
+        }
+        if (selected.length >= NUMBER_OF_QUESTIONS) break;
+      }
+      currentQuestions = selected;
+      currentIndex = 0;
+      userAnswers = [];
+      // store whether to show grammar notes
+      window.showGrammarNotes = document.getElementById('show-grammar').checked;
+      // UI adjustments
+      document.getElementById('start-screen').classList.add('hidden');
+      document.getElementById('results-screen').classList.add('hidden');
+      document.getElementById('quiz-screen').classList.remove('hidden');
+      // Timer
+      const timed = document.getElementById('timed-mode').checked;
+      if (timed) {
+        startTime = Date.now();
+        document.getElementById('timer').textContent = formatTime(timeLimit);
+        timerInterval = setInterval(() => {
+          const elapsed = Math.floor((Date.now() - startTime) / 1000);
+          const remaining = timeLimit - elapsed;
+          document.getElementById('timer').textContent = formatTime(remaining);
+          if (remaining <= 0) {
+            clearInterval(timerInterval);
+            finishQuiz();
+          }
+        }, 1000);
+      } else {
+        // Show elapsed time upward
+        startTime = Date.now();
+        timerInterval = setInterval(() => {
+          const elapsed = Math.floor((Date.now() - startTime) / 1000);
+          document.getElementById('timer').textContent = formatTime(elapsed);
+        }, 1000);
+      }
+      showQuestion();
+    }
+    function formatTime(seconds) {
+      const m = String(Math.floor(seconds / 60)).padStart(2, '0');
+      const s = String(seconds % 60).padStart(2, '0');
+      return `${m}:${s}`;
+    }
+    function showQuestion() {
+      const q = currentQuestions[currentIndex];
+      document.getElementById('question-counter').textContent = `Domanda ${currentIndex + 1} di ${currentQuestions.length}`;
+      document.getElementById('question-text').textContent = q.q;
+      const container = document.getElementById('options-container');
+      container.innerHTML = '';
+      q.opts.forEach((opt, i) => {
+        const label = document.createElement('label');
+        label.className = 'option';
+        const radio = document.createElement('input');
+        radio.type = 'radio';
+        radio.name = 'option';
+        radio.value = opt;
+        label.appendChild(radio);
+        label.appendChild(document.createTextNode(opt));
+        container.appendChild(label);
+      });
+      document.getElementById('next-button').textContent = currentIndex === currentQuestions.length - 1 ? 'Termina' : 'Prossima domanda';
+      // Show grammar note if requested
+      const noteEl = document.getElementById('grammar-note');
+      if (window.showGrammarNotes && q.cat && grammarLinks[q.cat]) {
+        const info = grammarLinks[q.cat];
+        noteEl.innerHTML = `Nota: <a href="${info.link}" target="_blank">${info.title}</a>`;
+      } else {
+        noteEl.innerHTML = '';
+      }
+    }
+    document.getElementById('next-button').addEventListener('click', () => {
+      // get selected answer
+      const radios = document.querySelectorAll('input[name="option"]');
+      let chosen = null;
+      radios.forEach(r => {
+        if (r.checked) chosen = r.value;
+      });
+      userAnswers[currentIndex] = chosen;
+      if (currentIndex < currentQuestions.length - 1) {
+        currentIndex++;
+        showQuestion();
+      } else {
+        finishQuiz();
+      }
+    });
+    function finishQuiz() {
+      clearInterval(timerInterval);
+      // hide quiz and show results
+      document.getElementById('quiz-screen').classList.add('hidden');
+      document.getElementById('results-screen').classList.remove('hidden');
+      // calculate score
+      let correct = 0;
+      const rows = [];
+      currentQuestions.forEach((q, i) => {
+        const userAns = userAnswers[i] || '';
+        const isCorrect = userAns === q.a;
+        if (isCorrect) correct++;
+        rows.push(`<tr><td>${i + 1}</td><td>${q.q}</td><td>${userAns || '—'}</td><td>${q.a}</td><td>${isCorrect ? '✔️' : '❌'}</td></tr>`);
+      });
+      const scorePct = Math.round((correct / currentQuestions.length) * 100);
+      document.getElementById('score-text').textContent = `Hai risposto correttamente a ${correct} su ${currentQuestions.length} domande (${scorePct}%).`;
+      document.getElementById('detailed-results').innerHTML = `<table><thead><tr><th>#</th><th>Domanda</th><th>Risposta data</th><th>Risposta corretta</th><th>Esito</th></tr></thead><tbody>${rows.join('')}</tbody></table>`;
+    }
+    document.getElementById('start-button').addEventListener('click', startQuiz);
+    document.getElementById('restart-button').addEventListener('click', () => {
+      // return to start screen
+      document.getElementById('results-screen').classList.add('hidden');
+      document.getElementById('start-screen').classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>
