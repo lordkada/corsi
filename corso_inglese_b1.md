@@ -1,6 +1,6 @@
 # Corso di Inglese per Principianti (fino al livello B1)
 
-Versione 2.0
+Versione 3.0
 
 Questo corso è stato creato per guidare uno studente principiante nello
 studio della lingua inglese fino al raggiungimento del livello B1
@@ -29,12 +29,11 @@ un elenco dei principali verbi regolari e irregolari.
   15. Formazione delle domande
   16. Verbi regolari e irregolari
   17. Phrasal verbs
-  18. 
-  Appendice 1: Dizionario Inglese→Italiano
-  Appendice 2: Dizionario Italiano→Inglese
-  Appendice 3: Coniugazioni dei verbi principali
-  Appendice 4: Phrasal verbs principali
-  Piano di studio: Verbi per principianti italiani
+  18. Errori comuni
+  19. Appendice 1: Dizionario Inglese→Italiano
+  20. Appendice 2: Dizionario Italiano→Inglese
+  21. Appendice 3: Coniugazioni dei verbi principali
+  22. Appendice 4: Phrasal verbs principali
 
 ## 1. Presente semplice e presente continuo
 
@@ -447,6 +446,26 @@ comuni con la relativa traduzione.
 | to fill in | riempire (un modulo) | Please fill in this form. | Per favore compila questo modulo. |
 | to check in | registrarsi (in hotel/aeroporto) | We have to check in two hours before the flight. | Dobbiamo registrarci due ore prima del volo. |
 
+## 18. Errori comuni
+
+Anche gli studenti più diligenti commettono errori sistematici quando passano
+da una lingua all’altra.  Questa sezione presenta alcuni degli errori più
+comuni commessi da parlanti italiani che studiano l’inglese e mostra la
+forma corretta con una breve spiegazione.
+
+| Errore comune | Correzione | Spiegazione |
+| --- | --- | --- |
+| I have 20 years | I am 20 years old | In inglese per parlare dell’età si usa il verbo *to be* (essere) e non *to have*. |
+| She make her homework | She does her homework | Si usa *do* con attività quotidiane e compiti; *make* si usa per creare qualcosa fisicamente o concettualmente. |
+| I like the music | I like music | L’articolo determinativo non si usa con nomi astratti e generali (musica, amore, sport) quando si parla in generale. |
+| I know him since two years | I have known him for two years | Per esprimere la durata si usa *for*; *since* indica il momento d’inizio. Inoltre il present perfect si usa per un’azione iniziata nel passato che continua nel presente. |
+| People is happy | People are happy | La parola *people* è un nome collettivo considerato plurale in inglese e richiede il verbo al plurale. |
+| Informations | Information | Molti nomi come *information*, *advice*, *furniture* sono non numerabili e non prendono la *-s*. |
+| I am here since two hours | I have been here for two hours | Si usa *have been* + tempo per azioni che iniziano nel passato e continuano nel presente; *for* indica la durata. |
+| How long you are here? | How long have you been here? | Nelle domande in present perfect si usa l’ausiliare *have* prima del soggetto. |
+| He explained me the problem | He explained the problem to me | Alcuni verbi transitivi richiedono la preposizione (*to*) prima del complemento di termine. |
+| She didn’t went | She didn’t go | Con l’ausiliare *did* il verbo principale resta alla forma base. |
+
 ## Appendice 1: Dizionario delle 1000 parole più comuni (Inglese→Italiano)
 
 Questa sezione contiene le 1000 parole inglesi più frequenti abbinate
@@ -520,7 +539,6 @@ risparmiare spazio.
 | **between** – fra | **example** – esempio | **listen** – ascoltare | **range** – gamma | **thank** – grazie |
 | **big** – grande | **except** – tranne | **little** – poco | **rather** – piuttosto | **that** – che |
 | **bird** – uccello | **excite** – eccitare | **live** – vivere | **reach** – raggiungere | **the** – il |
-
 | **bit** – bit | **exercise** – esercizio | **locate** – individuare | **read** – leggere | **their** – loro |
 | **black** – nero | **expect** – aspettare | **log** – log | **ready** – pronto | **them** – loro |
 | **block** – blocco | **experience** – esperienza | **lone** – solitario | **real** – reale | **then** – allora |
@@ -875,14 +893,20 @@ tra parentesi accanto al titolo.
 
 ### be (*essere*)
 
-| Persona | Presente semplice | Passato semplice | Presente continuo |
-| --- | --- | --- | --- |
-| io | am | was | am being |
-| tu | are | were | are being |
-| lui/lei | is | was | is being |
-| noi | are | were | are being |
-| voi | are | were | are being |
-| loro | are | were | are being |
+| Tempo Verbale | I | You | He/She/It | We | You (plurale) | They | Traduzione |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Present Simple | am | are | is | are | are | are | io sono, tu sei, lui/lei è... |
+| Past Simple | was | were | was | were | were | were | io ero, tu eri, lui/lei era... |
+| Future (will) | will be | will be | will be | will be | will be | will be | io sarò, tu sarai, lui/lei sarà... |
+| Present Continuous | am being | are being | is being | are being | are being | are being | sto essendo, stai essendo... |
+| Past Continuous | was being | were being | was being | were being | were being | were being | stavo essendo, stavi essendo... |
+| Present Perfect | have been | have been | has been | have been | have been | have been | sono stato, sei stato, è stato... |
+| Past Perfect | had been | had been | had been | had been | had been | had been | ero stato, eri stato... |
+| Future Perfect | will have been | will have been | will have been | will have been | will have been | will have been | sarò stato, sarai stato... |
+
+Nota: alcune forme (ad esempio i tempi continui e perfetti)
+sono rare con *to be* ma esistono e vanno comprese per una
+conoscenza completa del verbo.
 
 ### have (*avere*)
 
@@ -982,28 +1006,6 @@ tra parentesi accanto al titolo.
 | noi | come | came | are coming |
 | voi | come | came | are coming |
 | loro | come | came | are coming |
-
-## Piano di studio: verbi in inglese per principianti italiani
-
-Questo documento è pensato per studenti italiani che iniziano a
-studiare l'inglese da zero.  Ogni sezione spiega in italiano la
-grammatica, mentre gli esempi sono in inglese e seguiti dalla
-traduzione italiana.
-
-| Tempo Verbale | I | You | He/She/It | We | You (plurale) | They | Traduzione |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Present Simple | am | are | is | are | are | are | io sono, tu sei, lui/lei è... |
-| Past Simple | was | were | was | were | were | were | io ero, tu eri, lui/lei era... |
-| Future (will) | will be | will be | will be | will be | will be | will be | io sarò, tu sarai, lui/lei sarà... |
-| Present Continuous | am being | are being | is being | are being | are being | are being | sto essendo, stai essendo... |
-| Past Continuous | was being | were being | was being | were being | were being | were being | stavo essendo, stavi essendo... |
-| Present Perfect | have been | have been | has been | have been | have been | have been | sono stato, sei stato, è stato... |
-| Past Perfect | had been | had been | had been | had been | had been | had been | ero stato, eri stato... |
-| Future Perfect | will have been | will have been | will have been | will have been | will have been | will have been | sarò stato, sarai stato... |
-
-Nota: alcune forme (ad esempio i tempi continui e perfetti)
-sono rare con *to be* ma esistono e vanno comprese per una
-conoscenza completa del verbo.
 
 ## Appendice 4: Phrasal verbs principali (inglese→italiano)
 
