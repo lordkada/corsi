@@ -85,7 +85,8 @@
       </label>
       <br />
       <label>
-        <input type="checkbox" id="show-grammar" /> Mostra note grammaticali per ciascuna domanda
+        <!-- Pre-select the checkbox so that grammar notes are shown by default -->
+        <input type="checkbox" id="show-grammar" checked /> Mostra note grammaticali per ciascuna domanda
       </label>
       <br />
       <button id="start-button">Inizia il test</button>
@@ -405,7 +406,8 @@
       questions: {title:'Formazione delle domande', link:'https://github.com/lordkada/corsi/blob/main/corso_inglese_b1.md#15-formazione-delle-domande'},
       vocabulary: {title:'Vocabolario', link:'https://github.com/lordkada/corsi/blob/main/corso_inglese_b1.md#appendice-1-dizionario-inglese→italiano'},
       translation: {title:'Traduzioni', link:'https://github.com/lordkada/corsi/blob/main/corso_inglese_b1.md#appendice-1-dizionario-inglese→italiano'},
-      error: {title:'Errori comuni', link:'https://github.com/lordkada/corsi/blob/main/corso_inglese_b1.md#1-presente-semplice-e-presente-continuo'},
+      // Link to the common errors section (18) of the B1 course
+      error: {title:'Errori comuni', link:'https://github.com/lordkada/corsi/blob/main/corso_inglese_b1.md#18-errori-comuni'},
       modalTemplates: {title:'Verbi modali', link:'https://github.com/lordkada/corsi/blob/main/corso_inglese_b1.md#5-verbi-modali-permesso-possibilita-e-obbligo'}
     };
 
@@ -535,5 +537,11 @@
       document.getElementById('start-screen').classList.remove('hidden');
     });
   </script>
+  <!-- Footer with author, license and repository information -->
+  <footer style="text-align: center; font-size: 0.8em; color: #666; margin-top: 40px;">
+    Autore: <a href="https://github.com/lordkada" target="_blank">lordkada</a> &nbsp;|&nbsp;
+    Licenza: CC BY‑NC&nbsp;4.0 &nbsp;|&nbsp;
+    <a href="https://github.com/lordkada/corsi" target="_blank">Repository GitHub</a>
+  </footer>
 </body>
 </html>
