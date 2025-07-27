@@ -29,6 +29,7 @@ un elenco dei principali verbi regolari e irregolari.
   15. Formazione delle domande
   16. Verbi regolari e irregolari
   17. Phrasal verbs
+  18. 
   Appendice 1: Dizionario Inglese→Italiano
   Appendice 2: Dizionario Italiano→Inglese
   Appendice 3: Coniugazioni dei verbi principali
@@ -519,6 +520,7 @@ risparmiare spazio.
 | **between** – fra | **example** – esempio | **listen** – ascoltare | **range** – gamma | **thank** – grazie |
 | **big** – grande | **except** – tranne | **little** – poco | **rather** – piuttosto | **that** – che |
 | **bird** – uccello | **excite** – eccitare | **live** – vivere | **reach** – raggiungere | **the** – il |
+
 | **bit** – bit | **exercise** – esercizio | **locate** – individuare | **read** – leggere | **their** – loro |
 | **black** – nero | **expect** – aspettare | **log** – log | **ready** – pronto | **them** – loro |
 | **block** – blocco | **experience** – esperienza | **lone** – solitario | **real** – reale | **then** – allora |
