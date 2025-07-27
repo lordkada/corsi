@@ -1,98 +1,106 @@
 # Corso di inglese – Livello B1→B2
 
-    *Versione 1.0*
+*Versione 1.0*
 
-    ## Indice
+## Indice
 
-    
-        IntroduzioneFuturo continuo e futuro perfettoPast perfect e past perfect continuousModali di deduzione: presente e passatoAbitudini passate: used to, would e past simpleEspressioni di desiderio e rimpianto: wish e if onlyDiscorso indiretto (reported speech)Condizionali misti e avanzatiFrasi relative avanzate e riduzionePhrasal verbs e collocazioni comuni
-        Dizionario inglese–italiano
-        Dizionario italiano–inglese
-        Verbi regolari e irregolari
-        Elenco di phrasal verbs
-    
-    ## 1. Introduzione
+1. Introduzione
+2. Futuro continuo e futuro perfetto
+3. Past perfect e past perfect continuous
+4. Modali di deduzione: presente e passato
+5. Abitudini passate: used to, would e past simple
+6. Espressioni di desiderio e rimpianto: wish e if only
+7. Discorso indiretto (reported speech)
+8. Condizionali misti e avanzati
+9. Frasi relative avanzate e riduzione
+10. Phrasal verbs e collocazioni comuni
+11. Dizionario inglese–italiano
+12. Dizionario italiano–inglese
+13. Verbi regolari e irregolari
+14. Elenco di phrasal verbs
 
-        Questo corso di inglese è pensato per studenti con un livello B1 che
-        desiderano raggiungere il livello B2.  Il materiale riprende la
-        struttura del corso precedente, ma affronta argomenti grammaticali
-        più complessi e introduce nuove forme verbali e costrutti utili per
-        esprimersi con maggiore accuratezza e fluidità.  Ogni capitolo
-        spiega la teoria in italiano e presenta esempi in inglese con la
-        rispettiva traduzione.
+## 1. Introduzione
 
-        
+Questo corso di inglese è pensato per studenti con un livello B1 che
+desiderano raggiungere il livello B2.  Il materiale riprende la
+struttura del corso precedente, ma affronta argomenti grammaticali
+più complessi e introduce nuove forme verbali e costrutti utili per
+esprimersi con maggiore accuratezza e fluidità.  Ogni capitolo
+spiega la teoria in italiano e presenta esempi in inglese con la
+rispettiva traduzione.
+
+
 ## 2. Futuro continuo e futuro perfetto
 
-        Il **futuro continuo** (will/won't be + forma in -ing) descrive azioni
-        che saranno in corso in un momento specifico nel futuro oppure che
-        consideriamo temporanee o in divenire. Ad esempio, nelle frasi
-        inglesi “I'll be boarding a plane” e “We'll be watching the
-        match”【302848604229104†L95-L114】 l'azione sarà in corso a un’ora
-        determinata. Possiamo usare il futuro continuo anche per parlare di
-        situazioni nuove o temporanee, come “He'll be staying with his
-        parents for several months”【302848604229104†L108-L113】.
+Il **futuro continuo** (will/won't be + forma in -ing) descrive azioni
+che saranno in corso in un momento specifico nel futuro oppure che
+consideriamo temporanee o in divenire. Ad esempio, nelle frasi
+inglesi “I'll be boarding a plane” e “We'll be watching the
+match”【302848604229104†L95-L114】 l'azione sarà in corso a un’ora
+determinata. Possiamo usare il futuro continuo anche per parlare di
+situazioni nuove o temporanee, come “He'll be staying with his
+parents for several months”【302848604229104†L108-L113】.
 
-        Il **futuro perfetto** (will/won't have + participio passato) indica che
-        un’azione sarà completata prima di un punto nel futuro.  Nel
-        riferimento “I'll have finished cooking by then” la preparazione
-        sarà conclusa entro il momento indicato【302848604229104†L115-L132】.
-        Usiamo espressioni come *by* o *by the time* per specificare il
-        limite temporale: “By the time we arrive, the kids will have gone
-        to bed”【302848604229104†L124-L131】.
+Il **futuro perfetto** (will/won't have + participio passato) indica che
+un’azione sarà completata prima di un punto nel futuro.  Nel
+riferimento “I'll have finished cooking by then” la preparazione
+sarà conclusa entro il momento indicato【302848604229104†L115-L132】.
+Usiamo espressioni come *by* o *by the time* per specificare il
+limite temporale: “By the time we arrive, the kids will have gone
+to bed”【302848604229104†L124-L131】.
 
-        | Forma | Struttura | Uso |
+| Forma | Struttura | Uso |
 | --- | --- | --- |
 | Futuro continuo | will + be + verbo‑ing | Azione in corso in futuro |
 | Futuro perfetto | will + have + participio passato | Azione completata prima di un momento futuro |
 
-        
+
 ## 3. Past perfect e past perfect continuous
 
-        Il **past perfect** si forma con *had* più il participio passato e si usa
-        per indicare un’azione completata prima di un momento nel passato.  Ad
-        esempio: “I had finished the work”【800304958634270†L81-L86】.  Il
-        **past perfect continuous** usa *had been* più la forma in -ing e mette
-        l’accento sulla durata di un’azione: “I had been working there for a
-        year”【800304958634270†L87-L92】. Questa forma è utile quando
-        vogliamo sottolineare che l’azione era in corso per un certo periodo
-        prima di un’altra azione nel passato: “Everything was wet. It had
-        been raining for hours”【800304958634270†L102-L106】.
+Il **past perfect** si forma con *had* più il participio passato e si usa
+per indicare un’azione completata prima di un momento nel passato.  Ad
+esempio: “I had finished the work”【800304958634270†L81-L86】.  Il
+**past perfect continuous** usa *had been* più la forma in -ing e mette
+l’accento sulla durata di un’azione: “I had been working there for a
+year”【800304958634270†L87-L92】. Questa forma è utile quando
+vogliamo sottolineare che l’azione era in corso per un certo periodo
+prima di un’altra azione nel passato: “Everything was wet. It had
+been raining for hours”【800304958634270†L102-L106】.
 
-        Usiamo il past perfect per:
-        - descrivere un’azione iniziata nel passato e continuata fino a un certo punto (“She had lived in Liverpool all her life”)【800304958634270†L96-L101】;
+Usiamo il past perfect per:
+- descrivere un’azione iniziata nel passato e continuata fino a un certo punto (“She had lived in Liverpool all her life”)【800304958634270†L96-L101】;
 - parlare di azioni ripetute prima di un punto nel passato (“He had been playing ever since he was a teenager”)【800304958634270†L107-L113】;
 - riportare esperienze precedenti (“I was pleased to meet George. I hadn’t met him before”)【800304958634270†L114-L118】;
 - mostrare che qualcosa era importante per un evento successivo (“I had lost my keys”)【800304958634270†L120-L124】.
 
-        | Forma | Struttura | Uso |
+| Forma | Struttura | Uso |
 | --- | --- | --- |
 | Past perfect | had + participio passato | Azione completata prima di un'altra azione |
 | Past perfect continuous | had been + verbo‑ing | Durata di un’azione fino a un momento nel passato |
 
-        
+
 ## 4. Modali di deduzione: presente e passato
 
-        Per esprimere deduzioni sul presente usiamo i modali **must**,
-        **might/may/could** e **can’t**.  **Must** indica che siamo
-        quasi certi che qualcosa sia vero (“This must be her house”)【639563638031118†L103-L110】;
-        **might/may/could** esprimono una possibilità (“She might be stuck in
-        traffic”【639563638031118†L114-L119】) e **can’t** che qualcosa non è
-        possibile (“It can’t be far now”)【639563638031118†L124-L130】.  Questi
-        verbi sono seguiti dall’infinito senza *to*【639563638031118†L132-L133】.
+Per esprimere deduzioni sul presente usiamo i modali **must**,
+**might/may/could** e **can’t**.  **Must** indica che siamo
+quasi certi che qualcosa sia vero (“This must be her house”)【639563638031118†L103-L110】;
+**might/may/could** esprimono una possibilità (“She might be stuck in
+traffic”【639563638031118†L114-L119】) e **can’t** che qualcosa non è
+possibile (“It can’t be far now”)【639563638031118†L124-L130】.  Questi
+verbi sono seguiti dall’infinito senza *to*【639563638031118†L132-L133】.
 
-        Per deduzioni sul passato combiniamo il modale con *have* più il
-        participio passato.  **Must have + participio** indica quasi
-        certezza: “I must have dropped it in the taxi”【323414041811699†L69-L74】.  **Can’t/Couldn’t
-        have + participio** esprime che qualcosa non è avvenuto: “You
-        can’t have seen John last night”【323414041811699†L75-L82】.  **Could/Might/May
-        have + participio** suggerisce possibilità o opportunità mancata:
-        “They might have finished painting the house by now”【323414041811699†L90-L100】.
-        **Should/Ought to have + participio** serve per criticare o dire
-        che ci si aspettava qualcosa (“You should have already packed your
-        things”)【323414041811699†L107-L115】.
+Per deduzioni sul passato combiniamo il modale con *have* più il
+participio passato.  **Must have + participio** indica quasi
+certezza: “I must have dropped it in the taxi”【323414041811699†L69-L74】.  **Can’t/Couldn’t
+have + participio** esprime che qualcosa non è avvenuto: “You
+can’t have seen John last night”【323414041811699†L75-L82】.  **Could/Might/May
+have + participio** suggerisce possibilità o opportunità mancata:
+“They might have finished painting the house by now”【323414041811699†L90-L100】.
+**Should/Ought to have + participio** serve per criticare o dire
+che ci si aspettava qualcosa (“You should have already packed your
+things”)【323414041811699†L107-L115】.
 
-        | Modale | Struttura | Uso |
+| Modale | Struttura | Uso |
 | --- | --- | --- |
 | must (presente) | must + verbo | quasi certezza nel presente |
 | might/may/could (presente) | might/may/could + verbo | possibilità nel presente |
@@ -102,73 +110,73 @@
 | could/might/may have | could/might/may have + participio | possibilità o opportunità mancata nel passato |
 | should/ought to have | should/ought to have + participio | critica/aspettativa non soddisfatta |
 
-        
+
 ## 5. Abitudini passate: used to, would e past simple
 
-        Per descrivere abitudini o stati nel passato che non sono più veri
-        utilizziamo **used to + infinito**.  Si usa sia per stati sia per
-        azioni ripetute: “We used to live in New York” e “I used to go
-        swimming every Thursday”【138456774782824†L100-L113】.  Per formare la
-        negazione utilizziamo *didn’t use to*.
+Per descrivere abitudini o stati nel passato che non sono più veri
+utilizziamo **used to + infinito**.  Si usa sia per stati sia per
+azioni ripetute: “We used to live in New York” e “I used to go
+swimming every Thursday”【138456774782824†L100-L113】.  Per formare la
+negazione utilizziamo *didn’t use to*.
 
-        **Would** + infinito può sostituire *used to* per azioni ripetute,
-        soprattutto in contesti narrativi: “Every Saturday I would go on a
-        long bike ride”【138456774782824†L119-L124】.  Non si usa *would* per
-        stati e raramente nelle forme negativa e interrogativa【138456774782824†L124-L126】.
+**Would** + infinito può sostituire *used to* per azioni ripetute,
+soprattutto in contesti narrativi: “Every Saturday I would go on a
+long bike ride”【138456774782824†L119-L124】.  Non si usa *would* per
+stati e raramente nelle forme negativa e interrogativa【138456774782824†L124-L126】.
 
-        Il **past simple** (passato semplice) può sempre sostituire *used to*
-        o *would*, ma non enfatizza la ripetitività e non chiarisce se
-        l’abitudine non esiste più: “We went to the same beach every
-        summer”【138456774782824†L130-L137】.
+Il **past simple** (passato semplice) può sempre sostituire *used to*
+o *would*, ma non enfatizza la ripetitività e non chiarisce se
+l’abitudine non esiste più: “We went to the same beach every
+summer”【138456774782824†L130-L137】.
 
-        | Costrutto | Struttura | Esempio |
+| Costrutto | Struttura | Esempio |
 | --- | --- | --- |
 | used to | used to + verbo | I used to smoke |
 | would | would + verbo | We would visit our grandparents every Sunday |
 | past simple | verbo al passato | We visited our grandparents every Sunday |
 
-        
+
 ## 6. Espressioni di desiderio e rimpianto: wish e if only
 
-        Usiamo **wish** e **if only** per parlare di situazioni che vorremmo
-        fossero diverse.  Con il passato semplice esprimiamo un desiderio sul
-        presente: “I wish you didn’t live so far away”【312238684249541†L105-L110】.
-        Con il passato perfetto indichiamo rimpianti sul passato: “They wish
-        they hadn’t eaten so much chocolate”【312238684249541†L112-L118】.
-        Per esprimere fastidio verso comportamenti altrui usiamo *wish + would*:
-        “I wish you wouldn’t borrow my clothes without asking”【312238684249541†L123-L129】.
+Usiamo **wish** e **if only** per parlare di situazioni che vorremmo
+fossero diverse.  Con il passato semplice esprimiamo un desiderio sul
+presente: “I wish you didn’t live so far away”【312238684249541†L105-L110】.
+Con il passato perfetto indichiamo rimpianti sul passato: “They wish
+they hadn’t eaten so much chocolate”【312238684249541†L112-L118】.
+Per esprimere fastidio verso comportamenti altrui usiamo *wish + would*:
+“I wish you wouldn’t borrow my clothes without asking”【312238684249541†L123-L129】.
 
-        *If only* è più enfatico di *wish* ma segue le stesse regole.  Può
-        essere usato per lamentarsi o per esprimere rimpianti: “If only I
-        hadn’t lost her phone number”【312238684249541†L88-L90】.
+*If only* è più enfatico di *wish* ma segue le stesse regole.  Può
+essere usato per lamentarsi o per esprimere rimpianti: “If only I
+hadn’t lost her phone number”【312238684249541†L88-L90】.
 
-        | Tempo verbale | Struttura con wish/if only | Uso |
+| Tempo verbale | Struttura con wish/if only | Uso |
 | --- | --- | --- |
 | Desiderio nel presente | wish/if only + past simple | I wish he were here |
 | Rimpianto nel passato | wish/if only + past perfect | If only I had studied harder |
 | Fastidio | wish + would(n’t) | I wish she would stop talking |
 
-        
+
 ## 7. Discorso indiretto (reported speech)
 
-        Nel discorso indiretto riferiamo ciò che qualcuno ha detto usando una
-        struttura diversa dal discorso diretto.  In inglese spesso si
-        effettua il **backshift**, ossia si passa il verbo a un tempo
-        precedente: il presente semplice diventa passato semplice, il
-        presente continuo diventa passato continuo e il present perfect
-        diventa past perfect【792466142136797†L108-L128】. Ad esempio:
-        “I travel a lot in my job” ⇒ “Jamila said that she travelled a lot”【792466142136797†L118-L122】.
+Nel discorso indiretto riferiamo ciò che qualcuno ha detto usando una
+struttura diversa dal discorso diretto.  In inglese spesso si
+effettua il **backshift**, ossia si passa il verbo a un tempo
+precedente: il presente semplice diventa passato semplice, il
+presente continuo diventa passato continuo e il present perfect
+diventa past perfect【792466142136797†L108-L128】. Ad esempio:
+“I travel a lot in my job” ⇒ “Jamila said that she travelled a lot”【792466142136797†L118-L122】.
 
-        Il passato semplice diventa past perfect (“She told me they'd lived in
-        China for five years”)【792466142136797†L131-L138】 e il passato continuo
-        diventa past perfect continuous (“He told me it had been raining all
-        day”)【792466142136797†L131-L142】.  Il past perfect rimane invariato.
-        Quando ciò che è stato detto è ancora valido o rilevante, non sempre
-        si fa backshift; ad esempio: “I'm working in Italy for the next six
-        months” ⇒ “He told me he's working in Italy for the next six
-        months”【792466142136797†L155-L169】.
+Il passato semplice diventa past perfect (“She told me they'd lived in
+China for five years”)【792466142136797†L131-L138】 e il passato continuo
+diventa past perfect continuous (“He told me it had been raining all
+day”)【792466142136797†L131-L142】.  Il past perfect rimane invariato.
+Quando ciò che è stato detto è ancora valido o rilevante, non sempre
+si fa backshift; ad esempio: “I'm working in Italy for the next six
+months” ⇒ “He told me he's working in Italy for the next six
+months”【792466142136797†L155-L169】.
 
-        | Tempo diretto | Tempo indiretto |
+| Tempo diretto | Tempo indiretto |
 | --- | --- |
 | Present simple | Past simple |
 | Present continuous | Past continuous |
@@ -176,76 +184,76 @@
 | Past simple | Past perfect |
 | Past continuous | Past perfect continuous |
 
-        
+
 ## 8. Condizionali misti e avanzati
 
-        Oltre ai periodi ipotetici di primo, secondo e terzo tipo visti nel
-        corso B1, esistono condizionali **misti** che combinano tempi
-        diversi per esprimere relazioni tra passato, presente e futuro. Un
-        esempio è “If I had studied medicine, I would be a doctor now” dove
-        la protasi è al past perfect e l’apodosi usa *would + infinito* per
-        parlare di una conseguenza nel presente.  Un altro esempio è “If she
-        were taller, she would have been a model” in cui la condizione
-        riguarda il presente ma la conseguenza si riferisce al passato.
+Oltre ai periodi ipotetici di primo, secondo e terzo tipo visti nel
+corso B1, esistono condizionali **misti** che combinano tempi
+diversi per esprimere relazioni tra passato, presente e futuro. Un
+esempio è “If I had studied medicine, I would be a doctor now” dove
+la protasi è al past perfect e l’apodosi usa *would + infinito* per
+parlare di una conseguenza nel presente.  Un altro esempio è “If she
+were taller, she would have been a model” in cui la condizione
+riguarda il presente ma la conseguenza si riferisce al passato.
 
-        Ricorda che i condizionali misti sono utili per esprimere rimpianti o
-        ipotesi irrealistiche che collegano tempi diversi.
+Ricorda che i condizionali misti sono utili per esprimere rimpianti o
+ipotesi irrealistiche che collegano tempi diversi.
 
-        | Tipo | Struttura | Uso |
+| Tipo | Struttura | Uso |
 | --- | --- | --- |
 | Condizionale misto 1 | if + past perfect → would + infinito (presente) | Conseguenza nel presente di una condizione passata |
 | Condizionale misto 2 | if + past simple → would have + participio | Conseguenza nel passato di una condizione presente |
 
-        
+
 ## 9. Frasi relative avanzate e riduzione
 
-        Le frasi relative possono essere **defining** (identificative) o
-        **non‑defining** (esplicative). Quelle identificative forniscono
-        informazioni essenziali sull'antecedente e non sono separate da
-        virgole: “They’re the people who want to buy our house”.  Quelle
-        non‑identificative aggiungono informazioni extra e sono separate da
-        virgole: “Clare, who I work with, is doing the London marathon this
-        year”【695011001856806†L145-L165】.  Quando il pronome relativo funge da
-        oggetto, possiamo ometterlo (“The book I bought yesterday is great”).
-        Inoltre, per rendere il discorso più formale possiamo utilizzare
-        preposizioni prima dei pronomi relativi (“The house in which I
-        grew up”).
+Le frasi relative possono essere **defining** (identificative) o
+**non‑defining** (esplicative). Quelle identificative forniscono
+informazioni essenziali sull'antecedente e non sono separate da
+virgole: “They’re the people who want to buy our house”.  Quelle
+non‑identificative aggiungono informazioni extra e sono separate da
+virgole: “Clare, who I work with, is doing the London marathon this
+year”【695011001856806†L145-L165】.  Quando il pronome relativo funge da
+oggetto, possiamo ometterlo (“The book I bought yesterday is great”).
+Inoltre, per rendere il discorso più formale possiamo utilizzare
+preposizioni prima dei pronomi relativi (“The house in which I
+grew up”).
 
-        Le **reduced relative clauses** sono versioni abbreviate delle relative
-        clauses: quando il verbo è al presente continuo o al passivo, è
-        possibile usare il participio presente o passato rispettivamente.  Ad
-        esempio, “Students who are living in London” diventa “Students living
-        in London”.
+Le **reduced relative clauses** sono versioni abbreviate delle relative
+clauses: quando il verbo è al presente continuo o al passivo, è
+possibile usare il participio presente o passato rispettivamente.  Ad
+esempio, “Students who are living in London” diventa “Students living
+in London”.
 
-        | Tipo di relativa | Esempio |
+| Tipo di relativa | Esempio |
 | --- | --- |
 | Defining | The man who called is my uncle |
 | Non‑defining | My car, which I bought last year, is already old |
 | Ridotta | The people working here are friendly |
 
-        
+
 ## 10. Phrasal verbs e collocazioni comuni
 
-        I **phrasal verbs** sono verbi composti da un verbo base e una o più
-        particelle (preposizioni o avverbi). Essi assumono significati spesso
-        diversi dal verbo originale. Per il livello B2 è importante
-        conoscerne un numero maggiore e imparare a riconoscerne le
-        collocazioni. Alcuni esempi comuni sono:
+I **phrasal verbs** sono verbi composti da un verbo base e una o più
+particelle (preposizioni o avverbi). Essi assumono significati spesso
+diversi dal verbo originale. Per il livello B2 è importante
+conoscerne un numero maggiore e imparare a riconoscerne le
+collocazioni. Alcuni esempi comuni sono:
 
-        - *carry on* – continuare (“Please carry on with your work” – per favore continua con il tuo lavoro)
+- *carry on* – continuare (“Please carry on with your work” – per favore continua con il tuo lavoro)
 - *come up with* – trovare/ideare (“She came up with a brilliant idea” – ha trovato un’idea brillante)
 - *put up with* – sopportare (“I can’t put up with his behaviour” – non posso sopportare il suo comportamento)
 - *set up* – avviare/organizzare (“They set up a new company” – hanno avviato una nuova azienda)
 - *take over* – prendere il controllo (“The company was taken over by a competitor” – la società è stata rilevata da un concorrente)
 
-        Imparare le collocazioni (ad esempio *make a decision*, *take a risk*,
-        *pay attention*) aiuta a parlare in modo più naturale.
+Imparare le collocazioni (ad esempio *make a decision*, *take a risk*,
+*pay attention*) aiuta a parlare in modo più naturale.
 
-        
 
-    ## 11. Dizionario inglese–italiano
 
-    | - **I** – io
+## 11. Dizionario inglese–italiano
+
+| - **I** – io
 - **a** – un
 - **about** – circa
 - **above** – sopra
@@ -825,9 +833,9 @@
 - **your** – il tuo |
 | --- | --- | --- | --- | --- |
 
-    ## 12. Dizionario italiano–inglese
+## 12. Dizionario italiano–inglese
 
-    | - **a** – to
+| - **a** – to
 - **abbastanza** – enough
 - **accadere** – happen
 - **accordare** – tune
@@ -1352,9 +1360,9 @@
 - **è** – is |
 | --- | --- | --- | --- | --- |
 
-    ## 13. Verbi regolari e irregolari
+## 13. Verbi regolari e irregolari
 
-    | Verbo | Past Simple | Past Participle | Significato |
+| Verbo | Past Simple | Past Participle | Significato |
 | --- | --- | --- | --- |
 | **be** | was/were | been | essere |
 | **become** | became | become | diventare |
@@ -1394,9 +1402,9 @@
 | **think** | thought | thought | pensare |
 | **write** | wrote | written | scrivere |
 
-    ## 14. Elenco di phrasal verbs
+## 14. Elenco di phrasal verbs
 
-    | Phrasal verb | Significato |
+| Phrasal verb | Significato |
 | --- | --- |
 | **break down** | rompersi |
 | **bring back** | riportare |
